@@ -1726,6 +1726,20 @@ h1::selection {
     font-weight: 500;
   }
 
+  /* #home{
+    margin: 0;
+    padding: 0;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+} */
+
   /*   
   .skill-bars{
     padding: 55px 80px;
