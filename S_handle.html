@@ -1,216 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon/TA.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon/TA.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon/TA.png"
-    />
-    <link rel="manifest" href="favicon/site.webmanifest" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style/uiux.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/TA.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/TA.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/TA.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="style/uiux.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
 
-    <title>Social PORTFOLIO</title>
-  </head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <body>
-    <div class="custom__cursor__outer"></div>
-    <div class="custom__cursor__inner"></div>
+  <title>Social PORTFOLIO</title>
+</head>
 
-    <div class="overlay"></div>
-    <nav class="nav">
-      <a href="index.html">
-        <img src="favicon/TA.png" alt="" class="logo" />
-      </a>
+<body>
+  <div class="custom__cursor__outer"></div>
+  <div class="custom__cursor__inner"></div>
 
-      <ul class="menu desktop-menu">
-        <li>
-          <a href="index.html" class="menu-item hvr-underline-from-left"
-            >HOME</a
-          >
+  <div class="overlay"></div>
+  <nav class="nav">
+    <a href="index.html">
+      <img src="favicon/TA.png" alt="" class="logo" />
+    </a>
+
+    <ul class="menu desktop-menu">
+      <li>
+        <a href="index.html" class="menu-item hvr-underline-from-left">HOME</a>
+      </li>
+      <li>
+        <a href="http://127.0.0.1:5500/index.html#about" class="menu-item hvr-underline-from-left">ABOUT</a>
+      </li>
+      <li>
+        <a href="http://127.0.0.1:5500/S_handle.html" class="menu-item hvr-underline-from-left active-page">PROJECTS</a>
+      </li>
+      <li>
+        <a href="http://127.0.0.1:5500/index.html#blogs" class="menu-item hvr-underline-from-left">ACHIEVEMENTS</a>
+      </li>
+      <li>
+        <a href="http://127.0.0.1:5500/index.html#skills" class="menu-item hvr-underline-from-left">SKILLS</a>
+      </li>
+    </ul>
+
+    <!-- Toggle menu screen -->
+    <i class="bi bi-list" id="toggle-menu"></i>
+    <div class="mobile-menu">
+      <i class="bi bi-x" id="close-btn"></i>
+      <ul class="menu menu-items">
+        <li class="menu-item">
+          <a href="index.html" class="hvr-underline-from-left item">HOME</a>
+        </li>
+        <li class="menu-item">
+          <a href="http://127.0.0.1:5500/index.html#about" class="hvr-underline-from-left item">ABOUT</a>
+        </li>
+        <li class="menu-item">
+          <a href="http://127.0.0.1:5500/index.html#portfolio" class="hvr-underline-from-left item">PORTFOLIO</a>
         </li>
         <li>
-          <a
-            href="http://127.0.0.1:5500/index.html#about"
-            class="menu-item hvr-underline-from-left"
-            >ABOUT</a
-          >
+          <a href="http://127.0.0.1:5500/index.html#blogs" class="menu-item hvr-underline-from-left">ACHIEVEMENTS</a>
         </li>
-        <li>
-          <a
-            href="http://127.0.0.1:5500/S_handle.html"
-            class="menu-item hvr-underline-from-left active-page"
-            >PROJECTS</a
-          >
-        </li>
-        <li>
-          <a
-            href="http://127.0.0.1:5500/index.html#blogs"
-            class="menu-item hvr-underline-from-left"
-            >ACHIEVEMENTS</a
-          >
-        </li>
-        <li>
-          <a
-            href="http://127.0.0.1:5500/index.html#skills"
-            class="menu-item hvr-underline-from-left"
-            >SKILLS</a
-          >
+        <li class="menu-item">
+          <a href="http://127.0.0.1:5500/index.html#skills" class="hvr-underline-from-left item">SKILLS</a>
         </li>
       </ul>
+    </div>
+  </nav>
 
-      <!-- Toggle menu screen -->
-      <i class="bi bi-list" id="toggle-menu"></i>
-      <div class="mobile-menu">
-        <i class="bi bi-x" id="close-btn"></i>
-        <ul class="menu menu-items">
-          <li class="menu-item">
-            <a href="index.html" class="hvr-underline-from-left item">HOME</a>
-          </li>
-          <li class="menu-item">
-            <a
-              href="http://127.0.0.1:5500/index.html#about"
-              class="hvr-underline-from-left item"
-              >ABOUT</a
-            >
-          </li>
-          <li class="menu-item">
-            <a
-              href="http://127.0.0.1:5500/index.html#portfolio"
-              class="hvr-underline-from-left item"
-              >PORTFOLIO</a
-            >
-          </li>
-          <li>
-            <a
-              href="http://127.0.0.1:5500/index.html#blogs"
-              class="menu-item hvr-underline-from-left"
-              >ACHIEVEMENTS</a
-            >
-          </li>
-          <li class="menu-item">
-            <a
-              href="http://127.0.0.1:5500/index.html#skills"
-              class="hvr-underline-from-left item"
-              >SKILLS</a
-            >
-          </li>
-        </ul>
+  <div class="container">
+    <div class="wrapper">
+      <div class="one">
+        <div class="one-img">
+          <img src="images/LL.png" alt="project-thumbnail" />
+        </div>
+        <div class="one-text">
+          <h3 class="title">LINKEDIN </h3>
+          <p class="detail">
+            LinkedIn is my go-to platform for career growth, networking, job searching and sharing professional updates.
+            I use LinkedIn to showcase my skills, projects, activities and achievements to enhance my visibility & build
+            credibility and connect with industry experts.
+            <br>
+            Connect with me on LinkedIn!
+          </p>
+          <a href="https://www.linkedin.com/in/talha-ansari-22189b1bb/">LINK ></a>
+        </div>
       </div>
-    </nav>
 
-    <div class="container">
-      <div class="wrapper">
-        <div class="one">
-          <div class="one-img">
-            <img src="images/LL.png" alt="project-thumbnail" />
-          </div>
-          <div class="one-text">
-            <h3 class="title">LINKEDIN </h3>
-            <p class="detail">
-              LinkedIn is my go-to platform for career growth, networking, job searching and sharing professional updates. I use LinkedIn to showcase my skills, projects, activities and achievements to enhance my visibility & build credibility and connect with industry experts.
-              <br>
-              Connect with me on LinkedIn! 
-            </p>
-            <a href="https://www.linkedin.com/in/talha-ansari-22189b1bb/">LINK ></a>
-          </div>
+      <div class="two">
+        <div class="two-img">
+          <img src="images/gt.png" alt="project-thumbnail" />
         </div>
+        <div class="two-text">
+          <h3 class="title">GITHUB</h3>
+          <p class="detail">
+            GitHub is where I actively share my projects, make repositories, and contribute through commits. I use it to
+            collaborate, contribute to open source , improve my coding skills, and engage with the developer community.
+            <br>
+            Check out my work on GitHub!
 
-        <div class="two">
-          <div class="two-img">
-            <img src="images/cryptogamer.png" alt="project-thumbnail" />
-          </div>
-          <div class="two-text">
-            <h3 class="title">GITHUB</h3>
-            <p class="detail">
-              An app to download and play free and paid gaming apps with options
-              to buy and sell NFTs.
-            </p>
-            <a href="#">READ MORE ></a>
-          </div>
+
+          </p>
+          <a href="#">LINK ></a>
         </div>
+      </div>
 
-        <div class="three">
-          <div class="three-img">
-            <img src="images/foodapp.png" alt="project-thumbnail" />
-          </div>
-          <div class="three-text">
-            <h3 class="title">FOOD ORDER MOBILE APP</h3>
-            <p class="detail">
-              Designed an app to order food online from the nearest hotel. You
-              can check the ratings of the dish, ingredients used and calories
-              gain.
-            </p>
-            <a href="#">READ MORE ></a>
-          </div>
+      <div class="three">
+        <div class="three-img">
+          <img src="images/foodapp.png" alt="project-thumbnail" />
         </div>
-
-        <div class="four">
-          <div class="four-img">
-            <img src="images/interviewautomation.png" alt="project-thumbnail" />
-          </div>
-          <div class="four-text">
-            <h3 class="title">INTERVIEW AUTOMATION</h3>
-            <p class="detail">
-              A tool to automate the interview process. Simple and easy to use.
-            </p>
-            <a href="#">READ MORE ></a>
-          </div>
+        <div class="three-text">
+          <h3 class="title">FOOD ORDER MOBILE APP</h3>
+          <p class="detail">
+            Designed an app to order food online from the nearest hotel. You
+            can check the ratings of the dish, ingredients used and calories
+            gain.
+          </p>
+          <a href="#">READ MORE ></a>
         </div>
+      </div>
 
-        <div class="one">
-          <div class="one-img">
-            <img src="images/healthphilic.png" alt="project-thumbnail" />
-          </div>
-          <div class="one-text">
-            <h3 class="title">HEALTHPHILICS</h3>
-            <p class="detail">
-              Designed a simple health & technology website healthphilics.
-            </p>
-            <a href="#">READ MORE ></a>
-          </div>
+      <div class="four">
+        <div class="four-img">
+          <img src="images/interviewautomation.png" alt="project-thumbnail" />
+        </div>
+        <div class="four-text">
+          <h3 class="title">INTERVIEW AUTOMATION</h3>
+          <p class="detail">
+            A tool to automate the interview process. Simple and easy to use.
+          </p>
+          <a href="#">READ MORE ></a>
+        </div>
+      </div>
+
+      <div class="one">
+        <div class="one-img">
+          <img src="images/healthphilic.png" alt="project-thumbnail" />
+        </div>
+        <div class="one-text">
+          <h3 class="title">HEALTHPHILICS</h3>
+          <p class="detail">
+            Designed a simple health & technology website healthphilics.
+          </p>
+          <a href="#">READ MORE ></a>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="js/uiux.js"></script>
-  </body>
+  <script src="js/uiux.js"></script>
+</body>
+
 </html>
