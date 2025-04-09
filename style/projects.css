@@ -25,6 +25,7 @@ body {
   transition: all 0.5s ease;
   overflow-x: hidden;
   cursor: none;
+ 
 }
 
 html {
@@ -156,15 +157,19 @@ body::-webkit-scrollbar-thumb {
 
   nav {
     position: fixed;
-    background-color: var(--White);
+    top: 0; /* 🟢 Stick to top */
+    left: 0;
     width: 100vw;
     height: 80px;
+    background-color: var(--White);
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
     align-items: center;
-    z-index: 1;
+    z-index: 9999; /* 🟢 Stay on top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: clean shadow effect */
   }
+  
 
   /* toggle-menu */
   #toggle-menu {
