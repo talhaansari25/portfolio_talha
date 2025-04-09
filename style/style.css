@@ -36,6 +36,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 #preloader {
@@ -284,8 +285,9 @@ h1::selection {
     justify-content: space-between;
     padding: 0 20px;
     align-items: center;
-    z-index: 1;
+    z-index: 999; /* 👈 increase this */
   }
+  
 
   /* toggle-menu */
   #toggle-menu {
@@ -512,6 +514,7 @@ h1::selection {
 
   #about {
     position: relative;
+    padding-top: 100px;
     z-index: 1;
     margin-top: 2rem; /* creates space between ticker and image */
   }
