@@ -393,6 +393,14 @@ h1::selection {
     justify-content: center;
     align-items: center;
     transition: all 0.5s ease;
+    
+  }
+
+  .hero-items {
+    margin: 0 !important;
+    padding: 0 !important;
+    align-items: center;
+    text-align: center;
   }
 
   .hero-img {
@@ -410,15 +418,15 @@ h1::selection {
     align-items: flex-start;
     justify-content: center;
     text-align: center;
-    margin-left: 40px;
+    margin-left: 0px;
   }
 
   .hero-hello {
     font-size: 22px;
     font-weight: 400;
     letter-spacing: 1px;
-    margin-top: 30px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 8px;
   }
 
   .hero-name {
@@ -444,7 +452,7 @@ h1::selection {
     background: none;
     font-size: 15px;
     cursor: pointer;
-    padding: 14px 0px;
+    padding: 10px 0px;
     letter-spacing: 1px;
     text-decoration: none;
   }
@@ -468,24 +476,45 @@ h1::selection {
   /* HOME SECTION ENDS HERE */
 
   .ticker-wrap {
+    margin-top: 0;
+    margin-bottom: 1rem; /* you can reduce this to 0.5rem if still too large */
+    
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: linear-gradient(30deg, var(--LightBlue), var(--DarkBlue) 100%);
+    padding: 0.5rem 0;
     position: relative;
-    bottom: 60px;
+    z-index: 0;
+    margin-bottom: 1rem; /* add space below ticker */
   }
-  
+
+  .ticker {
+    display: inline-block;
+    animation: marquee 40s linear infinite;
+  }
+
+  .item-collection-1 {
+    position: relative;
+    left: 0%;
+    animation: swap 40s linear infinite;
+  }
+
   .item {
     display: inline-block;
     padding: 0 0.4rem;
     font-size: 0.8rem;
+    color: var(--White);
+    white-space: nowrap;
   }
-
 
   /* ABOUT SECTION STARTS HERE */
 
   #about {
-    height: 95rem;
-    width: 100vw;
+    position: relative;
+    z-index: 1;
+    margin-top: 2rem; /* creates space between ticker and image */
   }
-
   .about-container {
     height: 100%;
     display: flex;
@@ -663,33 +692,34 @@ h1::selection {
   }
 
   .slide-container {
-    max-width: 120px;
-    width: 100%;
-    height: 600px;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    flex-direction: row-reverse;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row-reverse;
-    padding: 40px 0;
   }
   .slide-content {
-    margin: 0 40px;
+    flex-direction: row-reverse;
+    margin: 0 20px;
     overflow: hidden;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row-reverse;
-    height: 400px;
+    height: auto;
   }
   .card {
     border-radius: 20px;
-    background-color: black;
-    height: 200%;
+    background-color: white;
+    width: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 20px;
   }
   .card-content {
     display: flex;
@@ -1106,6 +1136,73 @@ h1::selection {
   }
 }
 
+
+/* Fix carousel and blog layout on small screens */
+@media (max-width: 768px) {
+  .slide-content {
+    flex-direction: column !important; /* Override row-reverse */
+    max-width: 100%;
+    margin: 0 10px;
+    gap: 20px;
+    height: auto;
+  }
+  .card {
+    width: 90%;
+    height: auto;
+    padding: 0 12px;  /* Add horizontal padding instead of margin */
+    box-sizing: border-box;  /* Makes sure padding doesn’t cause o*/
+  }
+
+  .blog-title h3 {
+    font-size: 26px;
+  }
+
+  .blog-card-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  
+  .slide-content {
+    flex-direction: column !important;
+    margin: 0 10px;
+    gap: 20px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .name {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .viewmore-button {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+
+  .blog-content p {
+    font-size: 11px;
+  }
+
+  .blog-title h3 {
+    font-size: 22px;
+  }
+}
+
+
+
+/* ✅ Responsive Fixes */
+@media (max-width: 1024px) {
+  .slide-content {
+    flex-direction: column;
+  }
+}
+
 @media only screen and (min-width: 1100px) {
   #toggle-menu,
   .mobile-menu {
@@ -1429,7 +1526,7 @@ h1::selection {
     padding: 40px 0;
   }
   .slide-content {
-    margin: 0 40px;
+    margin: 0 0px;
     overflow: hidden;
     text-align: center;
     display: flex;
@@ -1441,7 +1538,8 @@ h1::selection {
   .card {
     border-radius: 20px;
     background-color: white;
-    height: 100%;
+    width: 300px;        /* ✅ Set a proper width */
+    height: 450px; 
     display: flex;
     align-items: center;
     justify-content: center;
