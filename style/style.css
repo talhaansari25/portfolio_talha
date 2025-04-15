@@ -774,18 +774,18 @@ h1::selection {
     transition: all 0.5s ease;
   }
   .viewmore-button:hover {
-    color: var(--White);
+    color: var(--Black);
     background: linear-gradient(100deg, var(--LightBlue), var(--DarkBlue));
     border: none;
   }
 
   .swiper-navBtn {
-    color: var(--White) !important;
+    color: var(--Black) !important;
     opacity: 50%;
     transition: color 0.3s ease;
   }
   .swiper-navBtn:hover {
-    color: var(--White) !important;
+    color: var(--Black) !important;
     opacity: 100%;
     transition: all 0.3s ease;
   }
@@ -800,7 +800,7 @@ h1::selection {
     left: 0;
   }
   .swiper-pagination-bullet {
-    background-color: white !important;
+    background-color: black !important;
     opacity: 1;
   }
   .swiper-pagination-bullet-active {
